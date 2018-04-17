@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Musky</string>
+    <string name="menulogout">Log Out</string>
+    <string name="accountsetting">Account Setting</string>
+    <string name="alluser">All Users</string>
+    <string name="st">Hey.. I am Using MUSKY!!</string>
+    <string name="menufriends">Friends</string>
+    <string name="menuactivity">Your Activity</string>
+
+
+</resources>

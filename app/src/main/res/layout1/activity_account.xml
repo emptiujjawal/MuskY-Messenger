@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context="com.empti.firebaseauthdemo.AccountActivity">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/p"
+        android:layout_marginTop="12dp"
+        android:id="@+id/circularimage"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/settingdisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/circularimage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:text="Display Name"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/settingstatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/circularimage"
+        android:layout_below="@+id/settingdisplay"
+        android:layout_marginTop="11dp"
+        android:gravity="center_horizontal"
+        android:text="@string/st"
+        android:textAlignment="center"
+        android:textColor="@color/red_200"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/picbutton"
+        android:layout_width="170dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="19dp"
+        android:background="@android:color/white"
+        android:text="Change Profile"
+        android:textSize="14sp"
+        android:layout_below="@+id/settingstatus"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/displaynamebutton"
+        android:layout_width="170dp"
+        android:layout_height="50dp"
+        android:text="Change Display Name"
+        android:textSize="14sp"
+        android:background="@android:color/white"
+        android:layout_below="@+id/picbutton"
+        android:layout_alignStart="@+id/picbutton"
+        android:layout_marginTop="15dp" />
+
+    <Button
+        android:id="@+id/statusbutton"
+        android:layout_width="170dp"
+        android:layout_height="50dp"
+        android:text="CHANGE STATUS"
+        android:textSize="14sp"
+        android:background="@color/amber_900"
+        android:layout_marginTop="13dp"
+        android:layout_below="@+id/displaynamebutton"
+        android:layout_alignStart="@+id/displaynamebutton" />
+
+
+</RelativeLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/blue_grey_900">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/chatprofileimg"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/p" />
+
+    <TextView
+        android:id="@+id/chatprofiledisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/chatprofileimg"
+        android:layout_marginStart="17dp"
+        android:layout_toEndOf="@+id/chatprofileimg"
+        android:text="Display Name"
+        android:textColor="@color/teal_A200"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/chatlastmessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/chatprofileimg"
+        android:layout_alignStart="@+id/chatprofiledisplay"
+        android:text="Tap to see the Conversations..."
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/chatlasttime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/chatprofiledisplay"
+        android:layout_marginEnd="12dp"
+        android:text="00:00"
+        android:textColor="@color/deep_orange_200" />
+
+</RelativeLayout>

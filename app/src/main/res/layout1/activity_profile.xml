@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.empti.firebaseauthdemo.ProfileActivity"
+    android:background="@color/blue_grey_900">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/chatdisplaylist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true" />
+
+    
+
+
+</RelativeLayout>

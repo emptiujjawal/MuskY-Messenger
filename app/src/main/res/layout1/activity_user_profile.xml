@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    tools:context="com.empti.firebaseauthdemo.UserProfileActivity">
+
+    <ImageView
+        android:id="@+id/profileuserimage"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/p" />
+
+    <TextView
+        android:id="@+id/profileusername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profileuserimage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:fontFamily="monospace"
+        android:text="Display Name"
+        android:textColor="@android:color/white"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/profileuserstatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profileusername"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="User Status"
+        android:textColor="@color/red_300"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/profileusersend"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/ic_tick"
+        android:textStyle="bold"
+        android:layout_alignBaseline="@+id/profileuserclose"
+        android:layout_alignBottom="@+id/profileuserclose"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="26dp" />
+
+    <Button
+        android:id="@+id/profileuserclose"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/ic_close" />
+
+    <TextView
+        android:id="@+id/profileuserfriends"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/profileusersend"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="63dp"
+        android:text="Total Friends"
+        android:textColor="@color/dark_purple_200" />
+
+    <TextView
+        android:id="@+id/profileusersendtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/profileuserclose"
+        android:layout_alignStart="@+id/profileusersend"
+        android:layout_marginBottom="10dp"
+        android:text="Send"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/profileusercanceltext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/profileusersend"
+        android:layout_alignStart="@+id/profileuserclose"
+        android:layout_marginBottom="10dp"
+        android:text="Back"
+        android:textColor="@android:color/white" />
+
+</RelativeLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/friendsingleimage"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/p" />
+
+    <TextView
+        android:id="@+id/friendsinglename"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/friendsingleimage"
+        android:layout_marginStart="20dp"
+        android:layout_toEndOf="@+id/friendsingleimage"
+        android:text="Display Name"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/friendsinglestatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="User Status"
+        android:textColor="@color/red_400"
+        android:layout_below="@+id/friendsinglename"
+        android:layout_alignStart="@+id/friendsinglename"
+        android:layout_marginTop="12dp" />
+
+    <TextView
+        android:id="@+id/friendsingledate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/friendsinglestatus"
+        android:layout_below="@+id/friendsinglestatus"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="12dp"
+        android:text="Date"
+        android:textColor="@color/brown_900" />
+
+    <ImageView
+        android:id="@+id/onlineimage"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/friendsinglename"
+        android:layout_marginEnd="31dp"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/online" />
+
+    <Button
+        android:id="@+id/sendmessagebtn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignEnd="@+id/onlineimage"
+        android:layout_alignTop="@+id/friendsinglestatus"
+        android:background="@drawable/ic_sendmessage"
+        android:visibility="invisible" />
+
+</RelativeLayout>

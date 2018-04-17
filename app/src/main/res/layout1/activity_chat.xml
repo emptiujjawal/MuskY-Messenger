@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/amber_50"
+    tools:context="com.empti.firebaseauthdemo.ChatActivity">
+
+    <LinearLayout
+        android:id="@+id/Chatuserprofile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/chatuimg"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/p"></de.hdodenhof.circleimageview.CircleImageView>
+
+        <TextView
+            android:id="@+id/chatuname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="13dp"
+            android:layout_toEndOf="@+id/chatuimg"
+            android:text="Chat User Name"
+            android:textAllCaps="true"
+            android:textColor="@color/light_blue_50"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/chatulastseen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:paddingStart="70dp"
+            android:text="Last Seen"
+            android:textStyle="italic" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/white"
+        android:orientation="horizontal"
+        android:weightSum="10"
+        android:id="@+id/linearLayout">
+
+        <ImageButton
+            android:id="@+id/chatuaddbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/blue_A700"
+            app:srcCompat="@drawable/ic_plus" />
+
+        <EditText
+            android:id="@+id/chatuedit"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="8"
+            android:ems="10"
+            android:hint="Type a message..."
+            android:inputType="text" />
+
+        <ImageButton
+            android:id="@+id/chatusendbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/blue_A700"
+            app:srcCompat="@drawable/ic_sendchat" />
+    </LinearLayout>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/chatuswipelist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/linearLayout"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/Chatuserprofile">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/chatulist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/linearLayout"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/Chatuserprofile" />
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+</RelativeLayout>
